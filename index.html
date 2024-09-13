@@ -71,7 +71,7 @@
                             <h1 class="text-white mb-4 animated slideInDown">Revolutionize Your Hiring Process with Nexlance</h1>
                             <p class="text-white pb-3 animated slideInDown">Empowering your business with cutting-edge Recruitment and Staffing Consultancy to effortlessly find and manage top talent.</p>
                             <a href="" class="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Are you a client ?</a>
-                            <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Are you a candidate ?</a>
+                            <a href="https://forms.gle/sBZoAwcWfJr29YyQ9" target="_blank" class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Are you a candidate ?</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
                             <img class="img-fluid animated zoomIn" src="img/hero.png" alt="">
@@ -254,56 +254,108 @@
 </div>
 <!-- Features End -->
 
-        
-
-        <!-- Footer Start -->
-        <div id="contactsection" class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-4">
-                        <p class="section-title text-white h5 mb-4">Coming Soon</p>
-                        <p>Imagine managing HR, projects, communication, and recruitment all within one powerful platform. Our soon-to-be-launched solution will revolutionize how you operate, bringing unprecedented productivity and efficiency to your business.</p>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <p class="section-title text-white h5 mb-4">Address<span></span></p>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>560102,Bengaluru, Karnataka, INDIA</p>
-                        <p><i class="fa fa-phone-alt me-3" href="tel:+91-8757654155"></i>+91-8757654155</p>
-                        <p><i class="fa fa-envelope me-3" href="mailto:hello@nexlance.co.in"></i>hello@nexlance.co.in</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
-                        <a class="btn btn-link" href="">Career</a>
-                        <button class="btn btn-secondary py-sm-2 px-sm-4 rounded-pill mt-2"><span class="fa fa-play-circle"></span>
-                            Book a Meeting</button>
-                    </div>
-                    
+<!-- Footer Start -->
+<div id="contactsection" class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5 px-lg-5">
+        <div class="row g-5">
+            <!-- Updated "Coming Soon" Section -->
+            <div class="col-md-6 col-lg-4 text-center">
+                <div class="coming-soon-wrapper">
+                    <p class="section-title text-gradient h5 mb-4 fw-bold">Coming Soon</p>
+                    <p>Imagine managing HR, projects, communication, and recruitment all within one powerful platform. Our soon-to-be-launched solution will revolutionize how you operate, bringing unprecedented productivity and efficiency to your business.</p>
+                    <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#comingSoonModal">
+                        <i class="fa fa-bell"></i> Notify Me
+                    </button>
                 </div>
             </div>
-            <div class="container px-lg-5">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom">Nexlance Innovations PVT LTD</a>, All Right Reserved. 
-							
-                        </div>
-                    </div>
+            <!-- Address Section -->
+            <div class="col-md-6 col-lg-4">
+                <p class="section-title text-white h5 mb-4">Address<span></span></p>
+                <p><i class="fa fa-map-marker-alt me-3"></i>Electronic City, Bangalore, Karnataka, 560100 INDIA</p>
+                <p><i class="fa fa-phone-alt me-3"></i>+91-8757654155</p>
+                <p><i class="fa fa-envelope me-3"></i>hello@nexlance.co.in</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <!-- Quick Links Section -->
+            <div class="col-md-6 col-lg-4">
+                <p class="section-title text-white h5 mb-4">Quick Link<span></span></p>
+                <a class="btn btn-link" href="">Privacy Policy</a>
+                <a class="btn btn-link" href="">Terms & Condition</a>
+                <a class="btn btn-link text-secondary fw-bold " href="#" data-bs-toggle="modal" data-bs-target="#internshipModal">Join Internships/Jobs with us</a>
+                <button class="btn btn-secondary py-sm-2 px-sm-4 rounded-pill mt-2"><span class="fa fa-play-circle"></span>
+                    Book a Meeting</button>
+            </div>
+        </div>
+    </div>
+    <div class="container px-lg-5">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom">Nexlance Innovations PVT LTD</a>, All Right Reserved.
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
+    </div>
+</div>
+<!-- Footer End -->
 
+<!-- Coming Soon Modal -->
+<div class="modal fade" id="comingSoonModal" tabindex="-1" aria-labelledby="comingSoonModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="comingSoonModalLabel">Coming Soon</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Imagine managing HR, projects, communication, and recruitment all within one powerful platform. Our soon-to-be-launched solution will revolutionize how you operate, bringing unprecedented productivity and efficiency to your business.</p>
+                <div class="position-relative w-100 mt-3">
+                    <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
+                    <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Internship Modal -->
+<div class="modal fade" id="internshipModal" tabindex="-1" aria-labelledby="internshipModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="internshipModalLabel">Internship Opportunities</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h4>Exciting Opportunity for Freshers, College Students & Entry-Level Candidates Across India!</h4>
+                <p>We are thrilled to announce a groundbreaking initiative at Nexlance!</p>
+                <p><strong>🌟 Incentive-Based 6-Month Internship Program for Sales & Marketing and HR roles, offering a pathway to permanent employment based on your performance.</strong></p>
+                <p><strong>Duration:</strong> 6-Month Internship Program</p>
+                <p><strong>Roles:</strong></p>
+                <ul>
+                    <li>Sales & Marketing Intern</li>
+                    <li>HR Intern</li>
+                </ul>
+                <p><strong>Work Location:</strong> Remote (Pan India)</p>
+                <p><strong>Company Location:</strong> Bangalore</p>
+                <p><strong>Why Join Us?</strong></p>
+                <p>This isn’t just another internship—it's a unique opportunity to learn, grow, and shine in the corporate world, no matter where you come from. We warmly welcome candidates from Tier 1, Tier 2, and Tier 3 colleges because at Nexlance, talent knows no boundaries.</p>
+                <p><strong>Inclusivity at Its Core</strong></p>
+                <p>We are dedicated to fostering diversity and inclusion in the workplace. Whether you're a woman or girl looking to build your career from the comfort of your home, or an individual with physical challenges, we value your unique strengths and welcome you with open arms.</p>
+                <p><strong>No Barriers, No Discrimination</strong></p>
+                <p>We stand by our promise of no qualification barriers and no discrimination—only a requirement for good communication skills and a passion to succeed.</p>
+                <p><strong>Join Us in Creating a Brighter Future</strong></p>
+                <p>Partner with us, grow with us, and be a part of this transformative journey as we pave the way for a brighter future together.</p>
+                <a href="https://forms.gle/q3G8Rhkr5pHkto4Z7" class="btn btn-primary mt-3" target="_blank">Apply Now</a>
+            </div>
+        </div>
+    </div>
+</div>
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
